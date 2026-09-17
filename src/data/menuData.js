@@ -1,0 +1,257 @@
+import imgTacos from "../assets/images/spicy-tacos.jpg";
+import imgGhostBurger from "../assets/images/ghost-burger.jpg";
+import imgFireWings from "../assets/images/fire-wings.jpg";
+import imgMildBowl from "../assets/images/mild-bowl.jpg";
+import imgChiliFries from "../assets/images/chili-fries.jpg";
+import imgInfernoWrap from "../assets/images/inferno-wrap.jpg";
+import imgJalapenoPoppers from "../assets/images/jalapeno-poppers.jpg";
+import imgCarnitasBurrito from "../assets/images/carnitas-burrito.jpg";
+import imgNachosSupremos from "../assets/images/nachos-supremos.jpg";
+import imgGrilledQuesadilla from "../assets/images/grilled-quesadilla.jpg";
+import imgVolcanoRibs from "../assets/images/volcano-ribs.jpg";
+import imgSpicyElote from "../assets/images/spicy-elote.jpg";
+import imgCrispyFishTacos from "../assets/images/crispy-fish-tacos.jpg";
+import imgSmashDevilBurger from "../assets/images/smash-devil-burger.jpg";
+import imgFirecrackerShrimp from "../assets/images/firecracker-shrimp.jpg";
+import imgChorizoDip from "../assets/images/chorizo-dip.jpg";
+import imgSpicyChurros from "../assets/images/spicy-churros.jpg";
+import imgChiliBrownie from "../assets/images/chili-brownie.jpg";
+import imgHorchata from "../assets/images/horchata.jpg";
+import imgChiliLimeSoda from "../assets/images/chili-lime-soda.jpg";
+
+// ─── MENU DATA (20 Realistic Local Items) ─────────────────────────────────────
+export const menuItems = [
+  {
+    id: 1,
+    name: "Spicy Street Tacos",
+    category: "Tacos",
+    price: 7.99,
+    bestPrice: true,
+    spiceLevel: 3,
+    emoji: "🌮",
+    description: "Three crispy corn tortillas loaded with shredded chili chicken, diced onion, fresh cilantro, and salsa roja.",
+    imgUrl: imgTacos,
+  },
+  {
+    id: 2,
+    name: "Ghost Pepper Burger",
+    category: "Burgers",
+    price: 12.99,
+    bestPrice: false,
+    spiceLevel: 5,
+    emoji: "🍔",
+    description: "Thick Angus patty infused with ghost pepper relish, molten pepper jack cheese, crispy onions, and habanero mayo.",
+    imgUrl: imgGhostBurger,
+  },
+  {
+    id: 3,
+    name: "Fire Buffalo Wings",
+    category: "Wings",
+    price: 10.99,
+    bestPrice: false,
+    spiceLevel: 4,
+    emoji: "🍗",
+    description: "Eight jumbo crispy wings tossed in our signature 4-alarm cayenne butter glaze. Served with cool ranch dip.",
+    imgUrl: imgFireWings,
+  },
+  {
+    id: 4,
+    name: "Mild Fiesta Rice Bowl",
+    category: "Bowls",
+    price: 8.99,
+    bestPrice: false,
+    spiceLevel: 1,
+    emoji: "🥣",
+    description: "Seasoned cilantro-lime rice topped with grilled chicken, black beans, sweet corn, guacamole, and mild crema.",
+    imgUrl: imgMildBowl,
+  },
+  {
+    id: 5,
+    name: "Loaded Chili Cheese Fries",
+    category: "Sides",
+    price: 5.99,
+    bestPrice: true,
+    spiceLevel: 2,
+    emoji: "🍟",
+    description: "Crispy crinkle-cut fries smothered in slow-cooked beef chili, melted cheddar cheese sauce, and sliced jalapeños.",
+    imgUrl: imgChiliFries,
+  },
+  {
+    id: 6,
+    name: "Inferno Chicken Wrap",
+    category: "Wraps",
+    price: 11.49,
+    bestPrice: false,
+    spiceLevel: 4,
+    emoji: "🌯",
+    description: "Tender grilled chipotle chicken, pepper jack, crunchy lettuce, and fiery serrano aioli wrapped in a toasted flour tortilla.",
+    imgUrl: imgInfernoWrap,
+  },
+  {
+    id: 7,
+    name: "Stuffed Jalapeño Poppers",
+    category: "Sides",
+    price: 6.49,
+    bestPrice: true,
+    spiceLevel: 3,
+    emoji: "🌶️",
+    description: "Fresh jalapeño halves stuffed with seasoned cream cheese, breaded and fried golden crisp. Served with sweet chili dip.",
+    imgUrl: imgJalapenoPoppers,
+  },
+  {
+    id: 8,
+    name: "Habanero Carnitas Burrito",
+    category: "Burritos",
+    price: 11.99,
+    bestPrice: false,
+    spiceLevel: 4,
+    emoji: "🌯",
+    description: "Braised pork carnitas, spicy pinto beans, Mexican rice, shredded cheese, and habanero salsa wrapped in a giant warm tortilla.",
+    imgUrl: imgCarnitasBurrito,
+  },
+  {
+    id: 9,
+    name: "Crispy Nachos Supremos",
+    category: "Street Snacks",
+    price: 7.49,
+    bestPrice: true,
+    spiceLevel: 2,
+    emoji: "🧀",
+    description: "Warm stone-ground tortilla chips piled high with spicy queso, jalapeños, pico de gallo, and zesty sour cream.",
+    imgUrl: imgNachosSupremos,
+  },
+  {
+    id: 10,
+    name: "Chipotle Grilled Quesadilla",
+    category: "Quesadillas",
+    price: 9.49,
+    bestPrice: false,
+    spiceLevel: 2,
+    emoji: "🧀",
+    description: "Buttery grilled tortilla packed with melted Oaxaca cheese, grilled fajita peppers, chipotle chicken, and fresh guacamole.",
+    imgUrl: imgGrilledQuesadilla,
+  },
+  {
+    id: 11,
+    name: "Volcano BBQ Ribs Basket",
+    category: "Mains",
+    price: 13.99,
+    bestPrice: false,
+    spiceLevel: 4,
+    emoji: "🍖",
+    description: "Fall-off-the-bone smoked pork ribs glazed in our fiery spicy peach barbecue sauce. Served with seasoned slaw.",
+    imgUrl: imgVolcanoRibs,
+  },
+  {
+    id: 12,
+    name: "Spicy Street Corn (Elote)",
+    category: "Sides",
+    price: 4.99,
+    bestPrice: true,
+    spiceLevel: 2,
+    emoji: "🌽",
+    description: "Charred sweet corn on the cob slathered in spicy chipotle crema, cotija cheese, cilantro, and chili-lime tajín powder.",
+    imgUrl: imgSpicyElote,
+  },
+  {
+    id: 13,
+    name: "Baja Crispy Fish Tacos",
+    category: "Tacos",
+    price: 8.49,
+    bestPrice: false,
+    spiceLevel: 2,
+    emoji: "🌮",
+    description: "Beer-battered flaky cod fillets with crunchy cabbage slaw, pickled red onions, and smoky chipotle tartar sauce.",
+    imgUrl: imgCrispyFishTacos,
+  },
+  {
+    id: 14,
+    name: "Smash Devil Burger",
+    category: "Burgers",
+    price: 10.49,
+    bestPrice: false,
+    spiceLevel: 3,
+    emoji: "🍔",
+    description: "Double crispy-edge smash patties, double cheddar, grilled jalapeños, caramelized onions, and secret Devil sauce on brioche.",
+    imgUrl: imgSmashDevilBurger,
+  },
+  {
+    id: 15,
+    name: "Firecracker Crispy Shrimp",
+    category: "Seafood",
+    price: 12.49,
+    bestPrice: false,
+    spiceLevel: 4,
+    emoji: "🍤",
+    description: "Panko-crusted jumbo shrimp fried till golden and tossed in a spicy-sweet sriracha chili glaze. Garnished with scallions.",
+    imgUrl: imgFirecrackerShrimp,
+  },
+  {
+    id: 16,
+    name: "Cheesy Chorizo Dip & Chips",
+    category: "Sides",
+    price: 6.99,
+    bestPrice: true,
+    spiceLevel: 3,
+    emoji: "🫕",
+    description: "Hot skillet of bubbling melted cheeses blended with spicy Mexican pork chorizo, served with warm house-made tortilla chips.",
+    imgUrl: imgChorizoDip,
+  },
+  {
+    id: 17,
+    name: "Cinnamon & Chili Churros",
+    category: "Desserts",
+    price: 5.49,
+    bestPrice: true,
+    spiceLevel: 1,
+    emoji: "🥖",
+    description: "Golden fried Mexican churros dusted in spiced cinnamon-chili sugar, served with warm Mexican spiced dark chocolate dip.",
+    imgUrl: imgSpicyChurros,
+  },
+  {
+    id: 18,
+    name: "Cayenne Dark Chocolate Brownie",
+    category: "Desserts",
+    price: 4.49,
+    bestPrice: true,
+    spiceLevel: 2,
+    emoji: "🍫",
+    description: "Rich, fudgy dark chocolate brownie infused with a subtle hint of cayenne pepper and drizzled with salted chili caramel.",
+    imgUrl: imgChiliBrownie,
+  },
+  {
+    id: 19,
+    name: "Agua de Horchata Picante",
+    category: "Drinks",
+    price: 3.99,
+    bestPrice: true,
+    spiceLevel: 1,
+    emoji: "🥤",
+    description: "Traditional sweet cinnamon rice milk crafted in-house, lightly sprinkled with chili nutmeg powder over crushed ice.",
+    imgUrl: imgHorchata,
+  },
+  {
+    id: 20,
+    name: "Hibiscus Chili Lime Soda",
+    category: "Drinks",
+    price: 3.49,
+    bestPrice: true,
+    spiceLevel: 1,
+    emoji: "🍹",
+    description: "Sparkling iced agua de Jamaica blended with fresh lime juice, organic agave, and a pinch of cayenne salt on the rim.",
+    imgUrl: imgChiliLimeSoda,
+  },
+];
+
+export const locations = [
+  { id: 1, name: "Downtown", address: "123 Chili Street, Downtown", hours: "Mon-Sun: 10AM - 10PM", phone: "+1 (555) 123-4567" },
+  { id: 2, name: "Midtown", address: "456 Pepper Ave, Midtown", hours: "Mon-Fri: 11AM - 9PM", phone: "+1 (555) 234-5678" },
+  { id: 3, name: "Uptown", address: "789 Salsa Blvd, Uptown", hours: "Sat-Sun: 12PM - 8PM", phone: "+1 (555) 345-6789" },
+];
+
+export const weeklySpecials = [
+  { id: 1, name: "Taco Tuesday Trio", originalPrice: 26.97, specialPrice: 19.99 },
+  { id: 2, name: "Wing Wednesday Feast", originalPrice: 21.98, specialPrice: 15.99 },
+  { id: 3, name: "Fire Friday Combo", originalPrice: 23.98, specialPrice: 17.99 },
+  { id: 4, name: "Weekend Ghost Platter", originalPrice: 35.97, specialPrice: 25.99 },
+];
