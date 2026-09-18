@@ -1,16 +1,48 @@
-# React + Vite
+# Spicy Momento
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React + Express + MongoDB food truck storefront.
 
-Currently, two official plugins are available:
+## Live deployment setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This repository is structured for:
+- Frontend: GitHub Pages
+- Backend: Render web service
 
-## React Compiler
+### Required GitHub secrets
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add these repository secrets in GitHub:
+- `VITE_API_URL` = `https://<your-render-app-name>.onrender.com/api`
+- `RENDER_DEPLOY_HOOK_URL` = your Render deploy hook URL
 
-## Expanding the Oxlint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The frontend is built with Vite and deployed to GitHub Pages using the GitHub Actions workflow in `.github/workflows/deploy-pages.yml`.
+
+### Backend
+
+The backend is in `server/` and is configured for Render via `render.yaml`.
+
+## Local development
+
+1. Create env files from the examples:
+   - root `.env.example` for the frontend
+   - `server/.env.example` for the API
+2. Install dependencies:
+   - `npm install`
+   - `cd server && npm install`
+3. Start the backend:
+   - `cd server && npm start`
+4. Start the frontend:
+   - `npm run dev`
+
+## Production build
+
+```bash
+npm run build
+```
+
+## Notes
+
+- Keep real secrets in environment variables only.
+- Do not commit `.env` files or MongoDB runtime data (`server/data/`).
+
